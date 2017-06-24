@@ -39,20 +39,25 @@ document.addEventListener('DOMContentLoaded', () => {
       border-radius: 3px;
       margin: 0 0 0 10px;
       background: transparent;
+      transition: all 0.2s ease-in-out;
       color: palevioletred;
       border: ${props => props.small ? '1px solid palevioletred' : '2px solid palevioletred'};
       padding: ${props => props.small ? '0.15em 0.6em' : '5px 27px;'};
       color: palevioletred;
+      cursor: pointer;
       &.mainButton {
         min-height: 50px;
         font-size: 32px;
         box-sizing: border-box;
         margin: 0 0 0 13px;
       }
+      &:hover {
+        background: pink;
+      }
 `;
 
 
-    class ContactForm extends React.Component {
+    class TODOList extends React.Component {
         constructor(props) {
             super(props);
             this.state = {
@@ -170,7 +175,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     ReactDOM.render(
-        <ContactForm/>,
+        <TODOList/>,
         document.querySelector('#app')
     );
 });

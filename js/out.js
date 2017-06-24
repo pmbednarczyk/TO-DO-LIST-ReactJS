@@ -9414,7 +9414,7 @@ var _createClass = function () { function defineProperties(target, props) { for 
 var _templateObject = _taggedTemplateLiteral(['\n      width: 100%;\n      max-width: 1000px;\n      margin: 0 auto;\n'], ['\n      width: 100%;\n      max-width: 1000px;\n      margin: 0 auto;\n']),
     _templateObject2 = _taggedTemplateLiteral(['\n    margin: 10px 0;\n    font-size: 17px;\n      &.checked {\n        color: green;\n      }\n      &:first-child {\n      margin-top: 20px;\n      }\n'], ['\n    margin: 10px 0;\n    font-size: 17px;\n      &.checked {\n        color: green;\n      }\n      &:first-child {\n      margin-top: 20px;\n      }\n']),
     _templateObject3 = _taggedTemplateLiteral(['\n    width: 50%;\n    min-height: 50px;\n    font-size: 32px;\n    padding: 5px 11px;\n    box-sizing: border-box;\n    min-width: 350px;\n    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */\n        color: pink;\n        font-weight: light;\n    }\n    '], ['\n    width: 50%;\n    min-height: 50px;\n    font-size: 32px;\n    padding: 5px 11px;\n    box-sizing: border-box;\n    min-width: 350px;\n    &::-webkit-input-placeholder { /* Chrome/Opera/Safari */\n        color: pink;\n        font-weight: light;\n    }\n    ']),
-    _templateObject4 = _taggedTemplateLiteral(['\n      border-radius: 3px;\n      margin: 0 0 0 10px;\n      background: transparent;\n      color: palevioletred;\n      border: ', ';\n      padding: ', ';\n      color: palevioletred;\n      &.mainButton {\n        min-height: 50px;\n        font-size: 32px;\n        box-sizing: border-box;\n        margin: 0 0 0 13px;\n      }\n'], ['\n      border-radius: 3px;\n      margin: 0 0 0 10px;\n      background: transparent;\n      color: palevioletred;\n      border: ', ';\n      padding: ', ';\n      color: palevioletred;\n      &.mainButton {\n        min-height: 50px;\n        font-size: 32px;\n        box-sizing: border-box;\n        margin: 0 0 0 13px;\n      }\n']);
+    _templateObject4 = _taggedTemplateLiteral(['\n      border-radius: 3px;\n      margin: 0 0 0 10px;\n      background: transparent;\n      transition: all 0.2s ease-in-out;\n      color: palevioletred;\n      border: ', ';\n      padding: ', ';\n      color: palevioletred;\n      cursor: pointer;\n      &.mainButton {\n        min-height: 50px;\n        font-size: 32px;\n        box-sizing: border-box;\n        margin: 0 0 0 13px;\n      }\n      &:hover {\n        background: pink;\n      }\n'], ['\n      border-radius: 3px;\n      margin: 0 0 0 10px;\n      background: transparent;\n      transition: all 0.2s ease-in-out;\n      color: palevioletred;\n      border: ', ';\n      padding: ', ';\n      color: palevioletred;\n      cursor: pointer;\n      &.mainButton {\n        min-height: 50px;\n        font-size: 32px;\n        box-sizing: border-box;\n        margin: 0 0 0 13px;\n      }\n      &:hover {\n        background: pink;\n      }\n']);
 
 var _react = __webpack_require__(52);
 
@@ -9452,13 +9452,13 @@ document.addEventListener('DOMContentLoaded', function () {
         return props.small ? '0.15em 0.6em' : '5px 27px;';
     });
 
-    var ContactForm = function (_React$Component) {
-        _inherits(ContactForm, _React$Component);
+    var TODOList = function (_React$Component) {
+        _inherits(TODOList, _React$Component);
 
-        function ContactForm(props) {
-            _classCallCheck(this, ContactForm);
+        function TODOList(props) {
+            _classCallCheck(this, TODOList);
 
-            var _this = _possibleConstructorReturn(this, (ContactForm.__proto__ || Object.getPrototypeOf(ContactForm)).call(this, props));
+            var _this = _possibleConstructorReturn(this, (TODOList.__proto__ || Object.getPrototypeOf(TODOList)).call(this, props));
 
             _this.handleInputValue = function (event) {
                 _this.setState({
@@ -9534,7 +9534,7 @@ document.addEventListener('DOMContentLoaded', function () {
             return _this;
         }
 
-        _createClass(ContactForm, [{
+        _createClass(TODOList, [{
             key: 'render',
             value: function render() {
                 var _this2 = this;
@@ -9600,10 +9600,10 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         }]);
 
-        return ContactForm;
+        return TODOList;
     }(_react2.default.Component);
 
-    _reactDom2.default.render(_react2.default.createElement(ContactForm, null), document.querySelector('#app'));
+    _reactDom2.default.render(_react2.default.createElement(TODOList, null), document.querySelector('#app'));
 });
 
 /***/ }),
