@@ -70,19 +70,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 tasks: [
                     {
                         name: 'Example thing to do...',
-                        done: false
+                        done: true,
                     },
                     {
                         name: '2nd Example thing to do...',
-                        done: false
+                        done: true,
                     },
                     {
                         name: '3rd Example thing to do...',
-                        done: false
+                        done: false,
                     },
                     {
                         name: '4th Example thing to do...',
-                        done: false
+                        done: false,
                     },
                 ]
             }
