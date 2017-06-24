@@ -38,18 +38,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const Button = styled.button`
       border-radius: 3px;
       margin: 0 0 0 10px;
-      background: transparent;
+      background: ${props => props.small ? '#c6c6c6;' : 'transparent'};
       transition: all 0.2s ease-in-out;
-      color: palevioletred;
-      border: ${props => props.small ? '1px solid palevioletred' : '2px solid palevioletred'};
+      color: ${props => props.small ? '#fff' : 'palevioletred'};
+      border: ${props => props.small ? 'transparent' : '2px solid palevioletred'};
       padding: ${props => props.small ? '0.15em 0.6em' : '5px 27px;'};
-      color: palevioletred;
       cursor: pointer;
       &.mainButton {
         min-height: 50px;
         font-size: 32px;
         box-sizing: border-box;
         margin: 0 0 0 13px;
+      }
+      &.checkedBtn {
+        background: #6de36d;
+        border: transparent;
       }
       &:hover {
         background: pink;
@@ -148,7 +151,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 key={i}
                 className={this.state.tasks[i].done ? "checked" : ''}>
                 {task.name}
-                <Button small onClick={(e) => this.handleTaskDone(task, i)}>Done</Button>
+                <Button
+                    small
+                    onClick={(e) => this.handleTaskDone(task, i)}
+                    className={this.state.tasks[i].done ? "checkedBtn" : ''}>Done</Button>
                 <Button small onClick={(e) => this.handleTaskRemove(task, i)}>Remove</Button>
             </Li>);
 
